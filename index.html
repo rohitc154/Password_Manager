@@ -50,11 +50,11 @@ session_start();
         </div>
 
         <div class="nav-links flex">
-            <a href="index.php" class="company-logo">
+            <a href="index.html" class="company-logo">
                 <img src="Assets/logo3.jpg" alt="Company Logo">
                 <ul class="flex">
             </a>
-            <li><a href="index.php" class="hover-links">Home</a></li>
+            <li><a href="index.html" class="hover-links">Home</a></li>
             <li><a href="aboutUs.html" class="hover-links">About Us</a></li>
             <li><a href="Services.php" class="hover-links">Services</a></li>
             <li><a href="loginfinal.html" class="primary-button">Login</a></li>
@@ -183,13 +183,6 @@ session_start();
         $json_data = json_encode(array('un' => $row['username'], 'pw' => $row['password']));
 
 
-        // Output JSON data
-        echo '<script>';
-        echo 'var jsonData = ' . $json_data . ';';
-        // JavaScript variable holding JSON data
-// echo 'console.log(jsonData);';
-    
-        echo '</script>';
     }
     ?>
 
