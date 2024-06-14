@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+.aboutus {
+    padding: 0px 60px;
+}
+
+.aboutus h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.intropara {
+    /* border: 2px solid black; */
+    padding: 20px 50px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--primary-text-color);
+
+    font-size: 1.4rem;
+}
+
+.workpara {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+
+    margin: 20px 0px;
+    font-size: 1.4rem;
+    color: var(--primary-text-color);
+    padding: 20px 50px;
+
+}
+
+.workpara p {
+    /* text-align: left; */
+    /* border: 2px solid black; */
+
+    margin: 20px;
+}
+
+.workpara img {
+    /* border: 2px solid black; */
+
+    height: 480px;
+    margin: 0px 0px;
+}
+
+.lastpara {
+    padding: 20px 0px;
+    font-size: 1.5rem;
+    margin: 25px 0px;
+    text-align: center;
+    color: var(--primary-text-color);
+
+}
+
+/* Cards */
+.team {
+    text-align: center;
+    margin: 20px 0px;
+    /* width: 200px; */
+}
+
+.personal {
+    /* border: 2px solid black; */
+    width: 250px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    /* box-shadow: 2px 2px 1px black; */
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.usContainer {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /* box-shadow: 5px 5px 10px black; */
+
+}
+
+
+.personal {
+    margin: 15px;
+}
+
+.personal img {
+    /* border: 2px solid red; */
+    width: 250px;
+    border-radius: 12px;
+}
+
+.personal p {
+    /* border: 2px solid red; */
+
+    margin-top: 0px;
+    padding: 0px 10px;
+}
+
+h3 {
+    margin: 8px 10px;
+}
+
+.personal a img {
+    /* border: 2px solid rgb(3, 6, 68); */
+    /* display: flex; */
+    padding: 5px 5px;
+    width: 30px;
+    margin: 7px 40px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 2px; */
+}
+
+.personallogo {
+    /* border: 2px solid rgb(3, 6, 68); */
+    display: flex;
+}
+
+
+@media(width <=1268px) {
+
+    .workpara {
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+
+    .workpara img {
+        display: none;
+    }
+}

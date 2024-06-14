@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="loginstyle.css" />
+  <title>Login Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="loginscript.js"></script>
+</head>
+
+
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm" action="#">
+
+      <div class="user-box">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+      </div>
+
+      <div class="user-box">
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+      </div>
+
+      <input type="submit" value="Login" class="btn">
+
+    </form>
+    <div id="message" style="
+    color: #dde9ec;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;"></div>
+  </div>
+</body>
+
+</html>
