@@ -56,7 +56,7 @@ session_start();
             </a>
             <li><a href="index.html" class="hover-links">Home</a></li>
             <li><a href="aboutUs.html" class="hover-links">About Us</a></li>
-            <li><a href="Services.php" class="hover-links">Services</a></li>
+            <li><a href="Services.html" class="hover-links">Services</a></li>
             <li><a href="loginfinal.html" class="primary-button">Login</a></li>
             </ul>
         </div>
@@ -71,7 +71,7 @@ session_start();
                         strong, unique
                         passwords that protect your accounts from unauthorized access.</p>
 
-                    <a href="Services.php" class="primary-button flex">Get Started</a>
+                    <a href="Services.html" class="primary-button flex">Get Started</a>
 
                 </div>
 
@@ -162,29 +162,28 @@ session_start();
             </div>
         </div>
     </div>
-    <?php
-    if (isset($_POST['website'])) {
-        $website = $_POST['website'];
+    <!-- <?php -->
+    <!-- if (isset($_POST['website'])) { -->
+    <!-- $website = $_POST['website']; -->
 
-        $server = "localhost";
-        $username = "root";
-        $password = "";
-        $database = "project";
+    <!-- $server = "localhost"; -->
+    <!-- $username = "root"; -->
+    <!-- $password = ""; -->
+    <!-- $database = "project"; -->
 
-        $conn = mysqli_connect($server, $username, $password, $database);
+    <!-- $conn = mysqli_connect($server, $username, $password, $database); -->
 
 
-        $sql1 = "SELECT * FROM `pwddetail` WHERE website='$website';";
-        $result = $conn->query($sql1);
+    <!-- $sql1 = "SELECT * FROM `pwddetail` WHERE website='$website';"; -->
+    <!-- $result = $conn->query($sql1); -->
 
-        $row = $result->fetch_assoc();
+    <!-- $row = $result->fetch_assoc(); -->
 
-        //Showing the Output
-        $json_data = json_encode(array('un' => $row['username'], 'pw' => $row['password']));
-
+    <!-- //Showing the Output
+        $json_data = json_encode(array('un' => $row['username'], 'pw' => $row['password'])); -->
 
     }
-    ?>
+    <!-- ?> -->
 
     <script>
         // JavaScript code to write PHP variable value into HTML element
@@ -327,7 +326,7 @@ session_start();
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutUs.html">About Us</a></li>
-                        <li><a href="Services.php">Services</a></li>
+                        <li><a href="Services.html">Services</a></li>
                         <!-- <li><a href="#">FAQ</a></li> -->
                         <!-- <li><a href="cards.html">Contact Us</a></li> -->
                     </ul>
