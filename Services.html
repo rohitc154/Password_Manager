@@ -45,13 +45,13 @@
         </div>
 
         <div class="nav-links flex">
-            <a href="index.php" class="company-logo">
+            <a href="index.html" class="company-logo">
                 <img src="Assets/logo3.jpg" alt="Company Logo">
                 <ul class="flex">
             </a>
-            <li><a href="index.php" class="hover-links">Home</a></li>
+            <li><a href="index.html" class="hover-links">Home</a></li>
             <li><a href="aboutUs.html" class="hover-links">About Us</a></li>
-            <li><a href="Services.php" class="hover-links">Services</a></li>
+            <li><a href="Services.html" class="hover-links">Services</a></li>
             <li><a href="loginfinal.html" class="primary-button">Login</a></li>
             </ul>
         </div>
@@ -138,7 +138,7 @@
     </div>
     </div>
 
-    <?php
+    <!-- <?php
     if (isset($_POST['website'])) {
         $website = $_POST['website'];
 
@@ -160,21 +160,7 @@
             $json_data = json_encode(array('un' => $row['username'], 'pw' => $row['password']));
         } else {
             // echo "Data not Found!";
-            echo "<script>";
-            echo "document.getElementById('#msg).innerText = 'Record not found!';";
-            echo "</script>";
-        }
-
-
-        // Output JSON data
-        echo '<script>';
-        echo 'var jsonData = ' . $json_data . ';';
-        // JavaScript variable holding JSON data
-        // echo 'console.log(jsonData);';
-    
-        echo '</script>';
-    }
-    ?>
+            // <!-- echo "<script>"; -->
 
 
     <script>
@@ -194,7 +180,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutUs.html">About Us</a></li>
-                        <li><a href="Services.php">Services</a></li>
+                        <li><a href="Services.html">Services</a></li>
                         <!-- <li><a href="cards.html">Contact Us</a></li> -->
                     </ul>
                 </div>
